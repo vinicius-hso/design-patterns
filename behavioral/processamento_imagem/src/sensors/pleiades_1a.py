@@ -2,5 +2,14 @@ from .interfaces import Isensor
 
 class Pleiades1A(Isensor):
             
-    def process_image(self, file_path):
-        print(f"Pleiades 1A processing image {file_path}")
+    def fusion(self, file_path):
+        print(f"Pleiades 1A - Fusion processing - Image {file_path}")
+        
+    def harmonization(self, file_path):
+        print(f"Pleiades 1A - Harmonization processing - Image {file_path}")
+
+    def ortho(self, file_path):
+        print(f"Pleiades 1A - Ortho-retification processing - Image {file_path}")
+        
+    def co_registration(self, file_path):
+        print(f"Pleiades 1A - Co-registration processing - Image {file_path}")

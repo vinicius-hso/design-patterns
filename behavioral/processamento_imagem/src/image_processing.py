@@ -15,5 +15,14 @@ class ImageProcessing():
     def sensor(self, sensor: Isensor) -> None:
         self._sensor = sensor
         
-    def execute(self, file_path) -> None:
-        self._sensor.process_image(file_path)
+    def execute_fusion(self, file_path) -> None:
+        self._sensor.fusion(file_path)
+        
+    def execute_harmonization(self, file_path) -> None:
+        self._sensor.harmonization(file_path)
+        
+    def execute_ortho(self, file_path) -> None:
+        self._sensor.ortho(file_path)
+        
+    def execute_co_registration(self, file_path) -> None:
+        self._sensor.co_registration(file_path)
